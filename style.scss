@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Overpass:wght@400;700&display=swap');
+
+$dark_cyan: hsl(185, 75%, 39%);
+$very_dark_desaturated_blue: hsl(229, 23%, 23%);
+$dark_grayish_blue: hsl(227, 10%, 46%);
+$dark_grey: hsl(0, 0%, 59%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  min-height: 100vh;
+  background-color: aliceblue;
+}
+
+.card {
+  width: 375px;
+  height: 670px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+
+  background-color: $dark_cyan;
+  background-image: url(images/bg-pattern-top.svg),
+    url(images/bg-pattern-bottom.svg);
+  background-position: bottom 300px right 150px, top 250px left 160px;
+  background-repeat: no-repeat;
+}
+.main_card {
+  width: 330px;
+  height: 380px;
+  background-color: white;
+  background-image: url(images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  // justify-content: center;
+  border-radius: 15px;
+  padding-top: 85px;
+  padding-bottom: 25px;
+}
+
+img {
+  border-radius: 50%;
+  border: white 5px solid;
+}
+.name {
+  // justify-content: center;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: $very_dark_desaturated_blue;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.name a {
+  font-weight: 400;
+  color: $dark_grayish_blue;
+}
+.social {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.city {
+  padding-bottom: 30px;
+  font-size: 1.1rem;
+}
+hr {
+  // border: 3px solid black;
+  width: 100%;
+  border-top: 10px;
+  color: $dark_grey;
+}
+.fallowers,
+.likes,
+.photos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.amount {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: $very_dark_desaturated_blue;
+}
+.item {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: $dark_grayish_blue;
+  letter-spacing: 2px;
+}
+// background-position: top -400px left 200px, bottom -400px right 200px;
+//   background-repeat: no-repeat;
